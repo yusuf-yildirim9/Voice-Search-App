@@ -1,0 +1,84 @@
+@import url("reset/reset.css");
+:root {
+  --bg-main: #09090b;
+  --bg-card: #18181b;
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  --record-red: #ef4444;
+  --text-main: #f4f4f5;
+  --text-muted: #a1a1aa;
+  --border-color: #27272a;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+.container {
+    width: 800px;
+}
+.container .title-wrapper{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.title-wrapper .title {
+    font-size: 3rem;
+    color: var(--text-main);
+}
+.title-wrapper .desc {
+    color: var(--text-muted);
+}
+
+.notepad-wrapper .note-textarea{
+    width: 100%;
+    padding: 16px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    resize: none;
+}
+
+.notepad-wrapper .actions-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.action-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding-block: 8px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    color: var(--text-main);
+}
+.mic-btn {
+    background-color: var(--record-red);
+    transition: all 0.2s ease-in-out;
+}
+.mic-btn:hover {
+    filter: brightness(1.15);
+    transform: translateY(-2px);
+}
+.mic-btn:active {
+    transform: translateY(0);
+}
+.copy-btn {
+    background-color: var(--accent);
+    transition: 0.2s ease-in-out;
+}
+.copy-btn:hover {
+    background-color: var(--accent-hover);
+}
+.download-btn,
+.clear-btn {
+    background-color: var(--bg-card);
+}

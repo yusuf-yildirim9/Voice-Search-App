@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Voice Search</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="title-wrapper">
+                <h1 class="title">Voice Search</h1>
+                <p class="desc">Speak naturally or type to search the web</p>
+            </div>
+            <div class="notepad-wrapper">
+                <textarea
+                    id="noteInput"
+                    class="note-textarea"
+                    placeholder="Start speaking or type here..."
+                    rows="5">
+                </textarea>
+                <div class="actions-wrapper">
+                    <button class="action-btn mic-btn" id="micBtn" aria-label="start audio recording">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                        <span>Listen</span>
+                    </button>
+
+                    
+                    <button id="copyBtn" class="action-btn copy-btn" aria-label="copy text" title="Copy">
+                        <i class="fa-regular fa-copy"></i>
+                        <span>Copy</span>
+                    </button>
+
+                    <button id="downloadBtn" class="action-btn download-btn" aria-label="Download as a File" title="Download">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Download</span>
+                    </button>
+
+                    <button id="clearBtn" class="action-btn clear-btn" aria-label="Clear All" title="Clear">
+                        <i class="fa-solid fa-trash-can"></i>
+                        <span>Clear</span>
+                    </button>
+                    
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
